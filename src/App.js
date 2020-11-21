@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import logo from './logo.svg';
 import './App.css';
 // import Greet from './components/Greet';
@@ -9,6 +10,8 @@ import Count from './components/Counter'
 import FunctionClick from './components/FunctionClick'
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreting from './components/UserGreting';
+import PersonList from './components/PersonList';
 
 
 function App() {
@@ -16,7 +19,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ParentComponent/>
+        <PersonList/>
+        {/* <UserGreting/> */}
+        {/* <ParentComponent/> */}
         {/* <EventBind/> */}
         {/* <FunctionClick/>
         <Count value='1'></Count>
