@@ -18,17 +18,15 @@ import Inline from './components/Inline';
 import './appStyles.css'
 import style from './appStyles.module.css'
 import From from './components/From';
+import MountingLifecycle from './components/MountingLifecycle';
+import UpdatingLifecycle from './components/UpdatingLifecycle';
 
 function App() {
   return (
     <div className="App">
-
-      <From />
-
-
-
-
-
+      <UpdatingLifecycle />
+      {/* <MountingLifecycle/> */}
+      {/* <From /> */}
       {/* <header className="App-header"> */}
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
