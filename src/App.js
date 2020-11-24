@@ -12,14 +12,22 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreting from './components/UserGreting';
 import PersonList from './components/PersonList';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
 
+import './appStyles.css'
+import style from './appStyles.module.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <PersonList/>
+        <h1 className='error'>Error</h1>
+        <h1 className={style.success}>Success</h1>
+        {/* <Inline></Inline> */}
+        {/* <StyleSheet primary={true} /> */}
+        {/* <PersonList/> */}
         {/* <UserGreting/> */}
         {/* <ParentComponent/> */}
         {/* <EventBind/> */}
