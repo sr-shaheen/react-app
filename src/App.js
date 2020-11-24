@@ -20,11 +20,15 @@ import style from './appStyles.module.css'
 import From from './components/From';
 import MountingLifecycle from './components/MountingLifecycle';
 import UpdatingLifecycle from './components/UpdatingLifecycle';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 function App() {
   return (
     <div className="App">
-      <UpdatingLifecycle />
+      <Table/>
+      {/* <FragmentDemo/> */}
+      {/* <UpdatingLifecycle /> */}
       {/* <MountingLifecycle/> */}
       {/* <From /> */}
       {/* <header className="App-header"> */}
