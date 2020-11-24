@@ -17,21 +17,31 @@ import Inline from './components/Inline';
 
 import './appStyles.css'
 import style from './appStyles.module.css'
+import From from './components/From';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className='error'>Error</h1>
-        <h1 className={style.success}>Success</h1>
-        {/* <Inline></Inline> */}
-        {/* <StyleSheet primary={true} /> */}
-        {/* <PersonList/> */}
-        {/* <UserGreting/> */}
-        {/* <ParentComponent/> */}
-        {/* <EventBind/> */}
-        {/* <FunctionClick/>
+
+      <From />
+
+
+
+
+
+      {/* <header className="App-header"> */}
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+
+
+      {/* <h1 className='error'>Error</h1>
+        <h1 className={style.success}>Success</h1> */}
+      {/* <Inline></Inline> */}
+      {/* <StyleSheet primary={true} /> */}
+      {/* <PersonList/> */}
+      {/* <UserGreting/> */}
+      {/* <ParentComponent/> */}
+      {/* <EventBind/> */}
+      {/* <FunctionClick/>
         <Count value='1'></Count>
         <Message></Message>
 
@@ -39,7 +49,7 @@ function App() {
 
         <Welcome name="React App"></Welcome>
         <Hello></Hello> */}
-      </header>
+      {/* </header> */}
     </div>
   );
 }
