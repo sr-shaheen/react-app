@@ -24,11 +24,18 @@ import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import PureComp from './components/PureComp';
 import MemoComp from './components/MemoComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 function App() {
   return (
     <div className="App">
-      <MemoComp name='Shaheen'/>
+      <FRParentInput/>
+      {/* <FocusInput/> */}
+      {/* <RefsDemo/> */}
+
+      {/* <MemoComp name='Shaheen'/> */}
       {/* <PureComp/> */}
       {/* <Table/> */}
       {/* <FragmentDemo/> */}
