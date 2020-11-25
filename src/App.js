@@ -28,11 +28,20 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <PortalDemo/>
+      <ErrorBoundary>
+        <Hero heroname='Batman' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroname='joker' />
+      </ErrorBoundary>
+
+      {/* <PortalDemo/> */}
       {/* <FRParentInput/> */}
       {/* <FocusInput/> */}
       {/* <RefsDemo/> */}
