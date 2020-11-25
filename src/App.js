@@ -33,11 +33,16 @@ import ErrorBoundary from './components/error-boundary/ErrorBoundary';
 import ClickCounter from './components/higher-order/ClickCounter';
 import Counter from './components/render-props/Counter';
 import ClickCounterTwo from './components/render-props/ClickCounterTwo';
+import ComponentC from './components/contex/ComponentC';
+import { UserProvider } from './components/contex/UserContext';
 
 function App() {
   return (
     <div className="App">
-      <Counter incrementValue="5">{(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>}</Counter>
+      <UserProvider value='Shaheen '>
+      <ComponentC/>
+      </UserProvider>
+      {/* <Counter incrementValue="5">{(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>}</Counter> */}
 
       {/* <Counter render={(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>} /> */}
 
