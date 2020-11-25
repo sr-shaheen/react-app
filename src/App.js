@@ -31,12 +31,17 @@ import PortalDemo from './components/portals/PortalDemo';
 import Hero from './components/error-boundary/Hero';
 import ErrorBoundary from './components/error-boundary/ErrorBoundary';
 import ClickCounter from './components/higher-order/ClickCounter';
+import Counter from './components/render-props/Counter';
+import ClickCounterTwo from './components/render-props/ClickCounterTwo';
 
 function App() {
   return (
     <div className="App">
+      <Counter incrementValue="5">{(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>}</Counter>
 
-      <ClickCounter name="shaheen"/>
+      {/* <Counter render={(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>} /> */}
+
+      {/* <ClickCounter name="shaheen"/> */}
       {/* <ErrorBoundary>
         <Hero heroname='Batman' />
       </ErrorBoundary>

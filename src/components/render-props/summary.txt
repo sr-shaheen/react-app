@@ -1,0 +1,1 @@
+Render props is same as higher order.both are resposible for reusing functionality.
