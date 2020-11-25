@@ -2,35 +2,35 @@
 import logo from './logo.svg';
 import './App.css';
 // import Greet from './components/Greet';
-import { Greet } from './components/Greet';
-import Welcome from './components/Welcome'
-import Hello from './components/Hello'
-import Message from './components/Message'
-import Count from './components/Counter'
-import FunctionClick from './components/FunctionClick'
-import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
-import UserGreting from './components/UserGreting';
-import PersonList from './components/PersonList';
-import StyleSheet from './components/StyleSheet';
-import Inline from './components/Inline';
+import { Greet } from './components/basic/Greet';
+import Welcome from './components/basic/Welcome'
+import Hello from './components/basic/Hello'
+import Message from './components/basic/Message'
+import Count from './components/basic/Counter'
+import FunctionClick from './components/basic/FunctionClick'
+import EventBind from './components/basic/EventBind';
+import ParentComponent from './components/parent-child/ParentComponent';
+import UserGreting from './components/basic/UserGreting';
+import PersonList from './components/parent-child/PersonList';
+import StyleSheet from './components/style-css/StyleSheet';
+import Inline from './components/style-css/Inline';
 
 import './appStyles.css'
 import style from './appStyles.module.css'
-import From from './components/From';
-import MountingLifecycle from './components/MountingLifecycle';
-import UpdatingLifecycle from './components/UpdatingLifecycle';
-import FragmentDemo from './components/FragmentDemo';
-import Table from './components/Table';
-import PureComp from './components/PureComp';
-import MemoComp from './components/MemoComp';
-import RefsDemo from './components/RefsDemo';
-import FocusInput from './components/FocusInput';
-import FRParentInput from './components/FRParentInput';
-import PortalDemo from './components/PortalDemo';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
+import From from './components/froms/From';
+import MountingLifecycle from './components/life-cycle/MountingLifecycle';
+import UpdatingLifecycle from './components/life-cycle/UpdatingLifecycle';
+import FragmentDemo from './components/fragments/FragmentDemo';
+import Table from './components/fragments/Table';
+import PureComp from './components/pure-components/PureComp';
+import MemoComp from './components/memo/MemoComp';
+import RefsDemo from './components/refs/RefsDemo';
+import FocusInput from './components/refs/FocusInput';
+import FRParentInput from './components/refs/FRParentInput';
+import PortalDemo from './components/portals/PortalDemo';
+import Hero from './components/error-boundary/Hero';
+import ErrorBoundary from './components/error-boundary/ErrorBoundary';
+import ClickCounter from './components/higher-order/ClickCounter';
 
 function App() {
   return (
