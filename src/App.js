@@ -35,13 +35,17 @@ import Counter from './components/render-props/Counter';
 import ClickCounterTwo from './components/render-props/ClickCounterTwo';
 import ComponentC from './components/contex/ComponentC';
 import { UserProvider } from './components/contex/UserContext';
+import PostList from './components/http/PostList';
+import PostFrom from './components/http/PostFrom';
 
 function App() {
   return (
     <div className="App">
-      <UserProvider value='Shaheen '>
+      <PostFrom />
+      {/* <PostList /> */}
+      {/* <UserProvider value='Shaheen '>
       <ComponentC/>
-      </UserProvider>
+      </UserProvider> */}
       {/* <Counter incrementValue="5">{(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>}</Counter> */}
 
       {/* <Counter render={(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>} /> */}
